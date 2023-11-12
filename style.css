@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Poppins:wght@200;300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  color: #4d4f62;
+  font-style: normal;
+  line-height: normal;
+}
+
+.container {
+  display: flex;
+
+  padding: 5rem 10rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.header-title-0 {
+  display: grid;
+  font-size: 24px;
+  font-weight: 275;
+  letter-spacing: 0.25px;
+  place-content: center;
+  white-space: nowrap;
+}
+@media (min-width: 766px) {
+  .header-title-0 {
+    font-size: 36px;
+  }
+  .header-title-1 {
+    white-space: none;
+  }
+}
+.header-title-0 span {
+  font-weight: 600;
+}
+
+.header-title-1 {
+  line-height: 25px;
+  letter-spacing: 0.104px;
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.5;
+}
+@media (min-width: 1160px) {
+  .grid-content {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+.grid-content {
+  display: grid;
+
+  place-items: center;
+  gap: 1rem;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 375px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+  border-top-style: solid;
+  border-top-width: 4px;
+
+  padding: 2rem;
+}
+.grid-row {
+  display: grid;
+  gap: 2rem;
+}
+
+.item-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.item-type {
+  line-height: 23px;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.09px;
+  opacity: 0.5;
+}
+
+svg {
+  margin: 40px 0 0 auto;
+}
+
+.grid-item[data-item-type="accent-1"] {
+  border-top-color: #44d3d2;
+}
+.grid-item[data-item-type="accent-2"] {
+  border-top-color: #ea5454;
+}
+.grid-item[data-item-type="accent-3"] {
+  border-top-color: rgb(255, 145, 2);
+}
+.grid-item[data-item-type="accent-4"] {
+  border-top-color: #549ef2;
+}
